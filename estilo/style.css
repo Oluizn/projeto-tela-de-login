@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes desenhoAnimacao {
+    0% {
+        top: -15px;
+    }
+    100% {
+        top: 25px;
+    }
+    
+}
 html {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -94,6 +103,7 @@ button {
     border-radius: 5px;
     transition-duration: 200ms;
     transition-delay: 25ms;
+    cursor: pointer;
 }
 button:hover {
     background-color: #5F2382;
@@ -102,5 +112,9 @@ button:hover {
 }
 img {
     width: 200px;
+    position: relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
 }
-
+ a {
+    text-decoration: none;
+}
