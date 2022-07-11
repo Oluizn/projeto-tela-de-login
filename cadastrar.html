@@ -21,13 +21,18 @@
         justify-content: center;
         background: linear-gradient(63deg, #240736 62%, #3F224F 50%);
     }
+    section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
     .conteiner {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 350px;
-        padding: 0px 10px 10px 10px;
+        padding: 0px 10px;
         height: 500px;
         background-color: #5F2382;
         border-radius: 20px;
@@ -51,6 +56,7 @@
         padding-top: 10px;
     }
     button {
+        align-self: center;
         color: yellow;
         background-color: #3F224F;
         width: 100px;
@@ -72,19 +78,22 @@
 </head>
 <body>
     <div class="conteiner">
-        <label for="nome e sobrenome">Nome e sobrenome</label>
-        <input type="text" name="nome e sobrenome" placeholder="Nome e sobrenome">
-        <label for="email">Endereço de E-Mail</label>
-        <input type="text" name="email" placeholder="E-Mail">
-        <label for="cep">CEP</label>
-        <input type="text" name="cep" placeholder="CEP">
-        <label for="logradouro">Logradouro/localidade</label>
-        <input type="text" name="logradouro" placeholder="Logradouro/localidade">
-        <label for="numero">Número</label>
-        <input type="text" name="numero" placeholder="Número">
-        <label for="telefone">Telefone</label>
-        <input type="text" name="telefone" placeholder="+55 (xx) xxxxx-xxxx">
-        <a href="index.html" rel="previous"><button>Cadastrar</button></a>
-    
+        <section>
+            <label for="nome e sobrenome">Nome e sobrenome</label>
+            <input type="text" name="nome e sobrenome" placeholder="Nome e sobrenome">
+            <label for="email">Endereço de E-Mail</label>
+            <input type="text" name="email" placeholder="E-Mail">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" placeholder="CEP">
+            <label for="logradouro">Logradouro/localidade</label>
+            <input type="text" name="logradouro" placeholder="Logradouro/localidade">
+            <label for="numero">Número</label>
+            <input type="text" name="numero" placeholder="Número">
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" placeholder="+55 (xx) xxxxx-xxxx">
+        </section>
+            <a href="index.html" rel="previous"><button>Cadastrar</button></a>
+        
+    </div>
 </body>
 </html>
